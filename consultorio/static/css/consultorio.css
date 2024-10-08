@@ -1,0 +1,364 @@
+body {
+              font-family: Arial, sans-serif;
+              background-color: #FDECDA !important; 
+              margin: 0;
+              padding: 0;
+              overflow-x: hidden;
+          }
+          
+          /* cabeçalho*/
+          header {
+              background-color:#FFFFFF;
+              padding: 14px 10px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+          }
+          
+          .content {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              justify-content: space-between;
+          }
+          
+          .brand-name {
+              font-family: 'Catamaran', sans-serif;
+              font-size: 3vw; /* Usando vw para ser responsivo */
+              color: #543320;
+              text-decoration: none;
+              font-weight: bold;
+              margin-left: 2vw; /* Usando vw para margem responsiva */
+          }
+          
+          /* Menu de navegação */
+          .menu-toggle {
+              display: none;
+              font-size: 24px;
+              cursor: pointer;
+          }
+          
+          .ul {
+              list-style-type: none;
+              padding: 0;
+              display: flex;
+              margin: 0;
+              margin-right: 3vw; /* Usando vw para margem responsiva */
+              justify-content: flex-start; 
+          }
+          
+          .ul li {
+              margin-left: 2vw; /* Usando vw para espaçamento responsivo */
+              margin-top: 1.5vw;
+          }
+          
+          .ul a {
+              text-decoration: none;
+              color: #7C4F39;
+              font-family: 'Segoe UI', sans-serif;
+              font-weight: 600;
+              padding: 10px;
+              transition: 0.3s;
+          }
+          
+          
+          nav ul a::after {
+              content: "";
+              background-color: #BD966D;
+              height: 3px;
+              width: 0%;
+              display: block;
+              margin: 0 auto;
+              transition: 0.3s;
+          }
+          
+          nav ul a:hover::after {
+              width: 100%;
+          }
+          
+          .titulo-consultorio h2{
+              font-family: 'Segoe UI', sans-serif;
+              color: #542020;
+              top: 40px;
+              text-align: center;
+              font-size: 1.7rem; /* Ajustado o tamanho da fonte */
+              position: relative;
+              top: 80px;
+          }
+          
+          
+          
+          .imagem {
+              width: 80%;
+              height: auto;
+          }
+          
+          /* Container de imagens */
+          .container-imagens {
+              display: flex; /* Flexbox para layout horizontal */
+              flex-wrap: nowrap; /* Impede que as imagens se movam para a linha seguinte */
+              overflow-x: auto; /* Permite rolar horizontalmente se necessário */
+              padding: 20px;
+              box-sizing: border-box;
+              gap: 10px; /* Espaço entre as imagens */
+              max-width: 95%;
+              left: 33px;
+              position: relative;
+              margin-top: 110px;
+          }
+          
+          .imagem {
+              flex: 1 1 auto; /* Faz com que as imagens ocupem o espaço necessário */
+              max-width: 100%; /* Garante que a largura não exceda o container */
+              box-sizing: border-box;
+          }
+          
+          .img-fluid {
+              width: 100%; /* Faz com que as imagens sejam responsivas */
+              height: auto; /* Mantém a proporção das imagens */
+          }
+          
+          
+          .linha1-marrom {
+              height: 4px;
+              background-color: #BD966D; /* Marrom escuro */
+              margin: 5px 0;
+              text-align: center;
+              width: 6%;
+              left: 597px;
+              position: relative;
+              top: 82px;
+          }
+          
+          .linha2-marrom {
+              height: 3.8px;
+              background-color: #BD966D; /* Marrom escuro */
+              position: relative;
+              width: 4%;
+              left: 612px;
+              top: 10px;
+          }
+          
+          .texto-equipe {
+              padding: 20px;
+              color: #542020;
+              font-family: 'Segoe UI', sans-serif;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+          }
+          
+          .larissa {
+              text-align: center;
+              width: 35%;
+              height: 25%;
+              margin-left: 45px;
+          }
+          
+          .texto-equipe h2{
+              position: relative;
+              margin-left: 10px;
+              top: 30px;
+              font-family: 'Segoe UI', sans-serif;
+              font-size: 1.7rem;
+          }
+          
+          .larissa img{
+              width: 80%;
+              position: relative;
+              top: 90px;
+              left: 95px;
+          }
+          
+          .conheca h1,h3,h5{
+              position: relative;
+              top: -450px;
+              color: #543320;
+              left: 600px;
+              font-family: 'Segoe UI', sans-serif;
+              max-width: 90%;
+              
+          }
+          
+          .texto-larissa {
+              color: #542020;
+              position: relative;
+              left: 8px;
+              word-wrap: break-word;
+              flex-direction: column;
+              top: 30px;
+          }
+          
+          .texto-fernanda h5{
+              color: #542020;
+              position: relative;
+              left: 177px;
+              top: -820px;
+              font-size: 121%;
+          }
+          
+          .conhecafer1 h1{
+              position: relative;
+              color: #543320;
+              font-size: 35px;
+              top: -840px;
+              left: 180px;
+          }
+          .conhecafer {
+              color: #543320;
+              position: relative;
+              top: -390px;
+              right: 419px;
+          }
+          
+          .fernanda img{
+              position: relative;
+              width: 28.5%;
+              top: -300px;
+              left: 770px;
+          }
+          
+          /* Regras de mídia para dispositivos menores que 768px */
+          @media (max-width: 768px) {
+              header {
+                  padding: 20px 10px;
+                  flex-direction: column;
+                  align-items: center; 
+              }
+          
+              .menu-toggle {
+                  display: block;
+              }
+          
+              .ul {
+                  display: none; 
+                  flex-direction: column; 
+                  align-items: center; 
+                  width: 100%;
+                  background-color: #ffffff;
+                  position: absolute;
+                  top: 60px; 
+                  left: 0;
+                  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+              }
+          
+              .ul.active {
+                  display: flex; 
+              }
+          
+              .ul li {
+                  margin-left: 0; 
+                  margin-top: 10px; 
+              }
+          
+              .container-imagens {
+                  flex-direction: column; /* Muda a direção para coluna em telas menores */
+                  align-items: center; /* Centraliza horizontalmente as imagens */
+                  padding: 10px; /* Ajusta o padding para dispositivos menores */
+                  gap: 10px; /* Espaço entre as imagens */
+                  right: 10px;
+                  position: relative;
+                  margin-top: 90px;
+              }
+              
+              .titulo-consultorio h2{
+                  font-size: 1.5rem;
+                  text-align: center;
+                  position: relative;
+                  left: 12px;
+                  color: #543320;
+              }
+          
+              .linha1-marrom{
+                  background-color: #BD966D;
+                  position: relative;
+                  margin-left: -370px;
+                  width: 13%;
+          
+              }
+          
+              .texto-equipe h2{
+                  color: #543320;
+                  text-align: center;
+                  position: relative;
+                  margin-left: 20px;
+                  margin-top: -22px;
+                  font-family: 'Segoe UI', sans-serif;
+                  font-size: 1.5rem;
+              }
+          
+              .linha2-marrom{
+                  background-color: #bd6d6d;
+                  height: 3.9%;
+                  width: 40%;
+                  left: 234px;
+                  position: relative;
+                  top: 6px;
+              }
+          
+              .larissa img{
+                  width: 100%;
+                  position: relative;
+                  top: 73px;
+                  left: 30px;
+              }
+          
+              .conheca h1 {
+                  color: #543320;
+                  position: relative;
+                  font-family: 'Segoe UI', sans-serif;
+                  max-width: -100%;
+                  top: -175px;
+                  left: 260px;
+                  
+              }
+          
+              .conheca h3{
+                  color: #543320;
+                  position: relative;
+                  font-family: 'Segoe UI', sans-serif;
+                  font-weight: 70px !important;
+                  top: -175px;
+                  left: 260px;
+              }
+          
+              .conheca h5{
+                  color: #543320;
+                  position: relative;
+                  font-family: 'Segoe UI', sans-serif;
+                  font-weight: 70px !important;
+                  top: -175px;
+                  left: 260px;
+              }
+          
+          
+              .fernanda img{
+                  width: 170px;;
+                  position: relative;
+                  left: 280px;
+                  top: -150px;
+              }
+              
+              .texto-fernanda h5{
+                  font-family: 'Segoe UI', sans-serif;
+                  color: #7C4F39;
+                  font-size: 10px !important;
+                  text-align: left; /* Alinha o texto à esquerda */
+                  margin: 0; /* Remove margens que podem causar desalinhamento */
+                  padding: 0; /* Remove padding que pode afetar o alinhamento */
+                  width: 50%; /* Garante que o h5 ocupe a largura total do contêiner pai */
+                  box-sizing: border-box; /* Inclui padding e bordas na largura total */
+                  overflow-wrap: break-word; /* Quebra palavras longas para evitar transbordamento */
+                  word-wrap: break-word; /* Compatibilidade adicional com navegadores antigos */
+                  top: -475px;
+                  position: relative;
+                  left: 30px;
+              }
+          
+              .conhecafer1{
+                  color: rgb(255, 0, 0);
+                  
+              }
+          }
+          
+          

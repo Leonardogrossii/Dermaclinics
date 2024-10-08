@@ -1,0 +1,291 @@
+body {
+              font-family: Arial, sans-serif;
+              background-color: #dadcfd !important; 
+              margin: 0;
+              padding: 0;
+              overflow-x: hidden;
+          }
+          
+          /* cabeçalho*/
+          header {
+              background-color:#FFFFFF;
+              padding: 14px 10px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+          }
+          
+          .content {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              justify-content: space-between;
+          }
+          
+          .brand-name {
+              font-family: 'Catamaran', sans-serif;
+              font-size: 3vw; /* Usando vw para ser responsivo */
+              color: #543320;
+              text-decoration: none;
+              font-weight: bold;
+              margin-left: 2vw; /* Usando vw para margem responsiva */
+          }
+          
+          /* Menu de navegação */
+          .menu-toggle {
+              display: none;
+              font-size: 24px;
+              cursor: pointer;
+          }
+          
+          .ul {
+              list-style-type: none;
+              padding: 0;
+              display: flex;
+              margin: 0;
+              margin-right: 3vw; /* Usando vw para margem responsiva */
+              justify-content: flex-start; 
+          }
+          
+          .ul li {
+              margin-left: 2vw; /* Usando vw para espaçamento responsivo */
+              margin-top: 1.5vw;
+          }
+          
+          .ul a {
+              text-decoration: none;
+              color: #7C4F39;
+              font-family: 'Segoe UI', sans-serif;
+              font-weight: 600;
+              padding: 10px;
+              transition: 0.3s;
+          }
+          
+          
+          nav ul a::after {
+              content: "";
+              background-color: #BD966D;
+              height: 3px;
+              width: 0%;
+              display: block;
+              margin: 0 auto;
+              transition: 0.3s;
+          }
+          
+          nav ul a:hover::after {
+              width: 100%;
+          }
+          
+          .titulo-consultorio h2{
+              font-family: 'Segoe UI', sans-serif;
+              color: #542020;
+              top: 40px;
+              text-align: center;
+              font-size: 1.7rem; /* Ajustado o tamanho da fonte */
+              position: relative;
+              top: 80px;
+          }
+          
+          .linha1-marrom {
+              height: 4px;
+              background-color: #BD966D; /* Marrom escuro */
+              margin: 5px 0;
+              text-align: center;
+              width: 5%;
+              left: 605px;
+              position: relative;
+              top: 85px;
+          }
+          
+          .imagem1{
+              position: relative;
+              max-width: 50%;
+              height: auto;
+              border-radius: 10px;
+              left: 90px;
+              top: 80px;
+          }
+          
+          .derma a{
+              font-family: 'Catamaran', sans-serif;
+              font-size: 3vw; /* Usando vw para ser responsivo */
+              color: #543320;
+              text-decoration: none;
+              font-weight: bold;
+              margin-left: 44vw; /* Usando vw para margem responsiva */
+              top: -150px;
+              position: relative;
+          }
+          
+          .conheca1 p {
+              font-family: 'Segoe UI', sans-serif;
+              position: relative;
+              color: #7C4F39;
+              left: 560px;
+              top: -110px;
+          }
+          
+          .historia a {
+              color: #543320;
+              font-family: 'Catamaran', sans-serif;
+              font-size: 2.5vw;
+              left: 540px;
+              position: relative;
+              top: -77px;
+          }
+          
+          .texto-historia p{
+              color: #7C4F39;
+              font-family: 'Segoe UI', sans-serif;
+              left: 560px;
+              position: relative;
+              top: -40px;
+          }
+          
+          .imagem2{
+              position: relative;
+              max-width: 50%;
+              height: auto;
+              border-radius: 10px;
+              left: 94px;
+              top: 14px;
+          }
+          
+          .oferecemos a{
+              position: relative;
+              color: #543320;
+              font-family: 'Catamaran', sans-serif;
+              font-size: 2.5vw;
+              top: -270px;
+              left: 530px;
+          }
+          
+          .texto-oferecemos p {
+              position: relative;
+              left: 550px;
+              top: -220px;
+              color: #7C4F39;
+              font-family: 'Segoe UI', sans-serif;
+          }
+          
+          .imagem3{
+              max-width: 50%;
+              height: auto;
+              border-radius: 10px;
+              position: relative;
+              left: 90px;
+              top: -70px;
+          }
+          
+          .filosofia a {
+              position: relative;
+              color: #543320;
+              font-family: 'Catamaran', sans-serif;
+              font-size: 2.5vw;
+              left: 530px;
+              top: -460px;
+          }
+          
+          .texto-filosofia p{
+              position: relative;
+              color: #7C4F39;
+              font-family: 'Segoe UI', sans-serif;
+              left: 550px;
+              top: -420px;
+          }
+          
+          .visita a{
+              position: relative;
+              color: #543320;
+              font-family: 'Catamaran', sans-serif;
+              font-size: 2.5vw;
+              top: -369px;
+              left: 530px;
+          }
+          
+          .texto-visita p{
+              position: relative;
+              color: #7C4F39;
+              font-family: 'Segoe UI', sans-serif;
+              left: 550px;
+              top: -320px;
+          }
+          
+          @media (max-width: 768px) {
+
+
+              body{
+                background-color: red !important;
+              }
+              header {
+                  padding: 20px 10px;
+                  flex-direction: column;
+                  align-items: center; 
+              }
+          
+              .menu-toggle {
+                  display: block;
+              }
+          
+              .ul {
+                  display: none; 
+                  flex-direction: column; 
+                  align-items: center; 
+                  width: 100%;
+                  background-color: #ffffff;
+                  position: absolute;
+                  top: 60px; 
+                  left: 0;
+                  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+              }
+          
+              .ul.active {
+                  display: flex; 
+              }
+          
+              .ul li {
+                  margin-left: 0; 
+                  margin-top: 10px; 
+              }
+          
+              .titulo-consultorio h2{
+                  font-family: 'Segoe UI', sans-serif;
+                  color: #542020;
+                  font-size: 1.3rem;
+                  position: relative;
+                  top: 60px;
+              }
+          
+              .imagem1 img{
+                  position: relative;
+                  max-width: 120%;
+                  left: 14px;
+                  top: 5px;
+              }
+          
+              .imagem2 {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+              }
+              
+              .imagem2 img {
+                  max-width: 100%; /* Ajusta a largura da imagem para caber na tela */
+                  height: auto; /* Mantém a proporção da imagem */
+                  display: block; /* Remove qualquer espaço extra abaixo da imagem */
+              }
+              
+              .conheca1 {
+                  text-align: center; /* Centraliza o texto horizontalmente */
+                  margin-top: 10px; /* Adiciona um espaço entre a imagem e o texto, ajuste conforme necessário */
+              }
+              
+              .conheca1 p {
+                  margin: 0; /* Remove a margem padrão do parágrafo */
+              }
+              
+          }
+          
+          
+          
